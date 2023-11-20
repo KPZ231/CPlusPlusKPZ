@@ -76,7 +76,7 @@ void Sortowanie(string nameFile) {
         file.close();
     }
 
-    auto start = chrono::steady_clock::now(); // Pomiar czasu rozpoczêcia sortowania
+    auto start = chrono::steady_clock::now(); // Pomiar czasu rozpoczÃªcia sortowania
 
     for (int i = 0; i < lineCount - 1; i++) {
         for (int j = 0; j < lineCount - i - 1; j++) {
@@ -87,7 +87,7 @@ void Sortowanie(string nameFile) {
         showProgressBar(i + 1, lineCount - 1);
     }
 
-    auto end = chrono::steady_clock::now(); // Pomiar czasu zakoñczenia sortowania
+    auto end = chrono::steady_clock::now(); // Pomiar czasu zakoÃ±czenia sortowania
 
     cout << endl;
 
@@ -96,7 +96,7 @@ void Sortowanie(string nameFile) {
     }
     cout << "\n";
 
-    // Obliczenie i wyœwietlenie czasu trwania sortowania
+    // Obliczenie i wyÅ“wietlenie czasu trwania sortowania
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
     cout << "Czas sortowania: " << duration << " ms" << endl;
 }
